@@ -1,38 +1,39 @@
-{
-    "vegetarian"= [
+
+  [
       {
+        "id":"1",
         "name": "Paneer Tikka",
         "recipe": "Paneer tikka is a popular Indian appetizer made from marinated paneer cubes grilled to perfection.",
-        "image_url": "https://example.com/paneer_tikka.jpg"
+        "imageUrl": "https://www.cookwithkushi.com/wp-content/uploads/2023/02/tandoori_paneer_tikka_restaurant_style.jpg"
       },
       {
+        "id":"2",
         "name": "Vegetable Biryani",
         "recipe": "Vegetable biryani is a fragrant and flavorful rice dish made with mixed vegetables and aromatic spices.",
-        "image_url": "https://example.com/vegetable_biryani.jpg"
+        "imageUrl": "https://i.ytimg.com/vi/Do7ZdUodDdw/maxresdefault.jpg"
       },
       {
+        "id":"3",
         "name": "Aloo Gobi",
         "recipe": "Aloo gobi is a classic North Indian dish made with potatoes and cauliflower in a spiced tomato gravy.",
-        "image_url": "https://example.com/aloo_gobi.jpg"
-      }
-    ],
-    
-    "non_vegetarian"= [
+        "imageUrl": "https://ministryofcurry.com/wp-content/uploads/2017/04/Aloo-Gobi-5.jpg"
+      },
       {
+        "id":"4",
         "name": "Chicken Tikka Masala",
         "recipe": "Chicken tikka masala is a creamy and flavorful curry made with marinated chicken pieces.",
-        "image_url": "https://example.com/chicken_tikka_masala.jpg"
+        "imageUrl": "https://www.indianhealthyrecipes.com/wp-content/uploads/2022/06/chicken-tikka-kebab.jpg"
       },
       {
+        "id":"5",
         "name": "Mutton Rogan Josh",
         "recipe": "Mutton rogan josh is a rich and spicy Kashmiri curry made with tender pieces of mutton.",
-        "image_url": "https://example.com/mutton_rogan_josh.jpg"
+        "imageUrl": "https://static.toiimg.com/thumb/53192600.cms?imgsize=418831&width=800&height=800"
       },
       {
+        "id":"6",
         "name": "Fish Curry",
         "recipe": "Fish curry is a tangy and spicy South Indian dish made with fresh fish and coconut milk.",
-        "image_url": "https://example.com/fish_curry.jpg"
+        "imageUrl": "https://www.tamarindnthyme.com/wp-content/uploads/2020/10/Untitled-design-91.jpg"
       }
     ]
-  }
-  

@@ -6,62 +6,13 @@ import {
   TextInput,
   Image,
 } from 'react-native';
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import Dish from './dish/dish';
 import PopularDish from './PopularDish';
 import { Filter } from './Image';
-import filter from 'lodash.filter';
 
 
 export default function Page1() {
-
-  const [search, setSearch] = useState('');
-  const [isLoading, setIsLoading] = useState(false);
-  const [error, setError] = useState(null);
-  const [fullData, setFullData] = useState([]);
-  const [data, setData] =  useState([]);
-
-  const API_ENDPOINT = `https://8b648f3c-b624-4ceb-9e7b-8028b7df0ad0.mock.pstmn.io/dishes/v1/`
-
-  useEffect(() => {
-    setIsLoading(true);
-    fetchData()
-  }, [])
-
-  const handleSearch = (text) =>{
-    setSearch(text);
-    const formattedSearch = text.toLowerCase();
-    const filterData = filter(fullData, (user)=>{
-      return contains(user,formattedSearch);
-    });
-
-    setData(filterData);
-  }
-
-  const contains = ({name}, text) =>{
-    
-    if(name.includes(text))
-      return true;
-    else 
-      return false;
-  }
-
-  const fetchData = async(url) =>{
-    try{
-      const response = await fetch(url);
-      const json = await response.json();
-      setData(json.results);
-
-      console.log(json.results);
-      setFullData(json.results);
-      setIsLoading(false);
-    }
-    catch(error){
-      setError(error);
-      console.log(error);
-      setIsLoading(false);
-    }
-  }
 
 
   return (
@@ -69,38 +20,20 @@ export default function Page1() {
       <View style={styles.date}>
         <View style={{flex:1,backgroundColor:'black'}}></View>
         <View style={styles.dContainer}>
+
+
           <TextInput 
-          
             style={[styles.textInputStyle, {color:'black'} ]} 
-            onChangeText={ text => { handleSearch(text)  }}  
             clearButtonMode='always'
             placeholderTextColor={'#2b3e5c'} 
             placeholder='search your favorite dish' 
-            value={search}
           />
+          
           <TouchableOpacity>
             <Image source={Filter} style={{width:25, height:25}} />
           </TouchableOpacity> 
         </View>
       
-      <View style={{flexDirection:"row", justifyContent:'center', alignItems:'center'}} >
-        
-        <View style={styles.country} >
-          <Text style={styles.countryText} >Italian</Text>
-        </View>
-
-        <View style={styles.country} >
-          <Text style={styles.countryText} >Indian</Text>
-        </View>
-
-        <View style={styles.country} >
-          <Text style={styles.countryText} >Indian</Text>
-        </View>
-
-        <View style={styles.country} >
-          <Text style={styles.countryText} >Indian</Text>
-        </View>
-      </View>
       </View>
 
       <View style={styles.continental}>
@@ -110,7 +43,7 @@ export default function Page1() {
         </Text>
 
         <View style={{flexDirection: 'row',margin:0}}>
-            <PopularDish/>
+            <PopularDish />
         </View>
       </View>
 
@@ -124,7 +57,6 @@ export default function Page1() {
           <Text style={{fontSize: 25, color: 'black', fontWeight:'bold'}}>
             Recommended
           </Text>
-          <TouchableOpacity>
             <Text
               style={{
                 paddingHorizontal: 10,
@@ -136,10 +68,9 @@ export default function Page1() {
               }}>
               Menu
             </Text>
-          </TouchableOpacity>
         </View>
 
-        <Dish data={data}  />
+        <Dish />
       </View>
     </View>
   );
@@ -173,8 +104,6 @@ const styles = StyleSheet.create({
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.25,
     shadowRadius: 3.84,
-    width:'90%',
-    height:10,
 
     // Elevation (for Android)
     elevation: 5
