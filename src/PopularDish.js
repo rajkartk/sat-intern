@@ -11,7 +11,8 @@ const PopularDish = () => {
     navigation.navigate('Recepie',{
       name:item.name,
       imageUrl : item.imageUrl,
-      recepie : recepirData.recipe
+      recepie : recepirData.recipe,
+      id:item.id
     })
     
   }
@@ -19,6 +20,7 @@ const PopularDish = () => {
     <TouchableOpacity onPress={()=>handleClick(item)} style={{paddingHorizontal:10, justifyContent:'center', alignItems:'center'}} >
       <Image source={{ uri: item.imageUrl }} style={{ width: 80, height: 80, borderRadius:50, borderColor:'orange', borderWidth:2 }} />
       <Text style={{color:'black'}}>{item.name}</Text>
+      {/* <View>{item.recipe}</View> */}
     </TouchableOpacity>
   );
 

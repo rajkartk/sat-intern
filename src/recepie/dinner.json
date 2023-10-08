@@ -1,0 +1,149 @@
+{
+    "indianRecipes": [
+      {
+        "name": "Butter Chicken",
+        "duration": "45 minutes to 1 hour",
+        "imageUrl":"https://www.indianhealthyrecipes.com/wp-content/uploads/2023/04/butter-chicken-recipe.jpg",
+        "ingredients": [
+          "500g chicken pieces",
+          "2 onions, finely chopped",
+          "4 tomatoes, pureed",
+          "1/2 cup butter",
+          "1/2 cup cream",
+          "2 tsp ginger-garlic paste",
+          "1 tsp red chili powder",
+          "1 tsp garam masala",
+          "Salt to taste",
+          "Fresh coriander leaves for garnish"
+        ],
+        "instructions": [
+          "Marinate chicken with ginger-garlic paste, chili powder, and salt.",
+          "Heat butter in a pan, add onions, and sauté until golden brown.",
+          "Add tomato puree, garam masala, and cook until oil separates.",
+          "Add marinated chicken and cook until tender.",
+          "Stir in cream, simmer for a few minutes, and garnish with coriander leaves."
+        ]
+      },
+      {
+        "name": "Paneer Tikka",
+        "duration": "30 minutes",
+        "imageUrl":"https://www.cookwithkushi.com/wp-content/uploads/2023/02/tandoori_paneer_tikka_restaurant_style.jpg",
+        "ingredients": [
+          "250g paneer cubes",
+          "1/2 cup yogurt",
+          "2 tsp ginger-garlic paste",
+          "1 tsp red chili powder",
+          "1 tsp turmeric powder",
+          "1 tsp garam masala",
+          "Salt to taste",
+          "2 tbsp oil",
+          "Skewers for grilling"
+        ],
+        "instructions": [
+          "Mix yogurt, ginger-garlic paste, chili powder, turmeric, garam masala, salt, and oil to make the marinade.",
+          "Marinate paneer cubes in the mixture for 30 minutes.",
+          "Thread paneer cubes onto skewers and grill until slightly charred.",
+          "Serve hot with mint chutney."
+        ]
+      },
+      {
+        "name": "Chicken Biryani",
+        "duration": "1 hour 30 minutes",
+        "imageUrl":"https://www.indianhealthyrecipes.com/wp-content/uploads/2021/12/chicken-biryani.jpg.webp",
+        "ingredients": [
+          "500g chicken pieces",
+          "2 cups basmati rice",
+          "2 onions, thinly sliced",
+          "2 tomatoes, chopped",
+          "1/2 cup yogurt",
+          "2 tsp ginger-garlic paste",
+          "1 tsp red chili powder",
+          "1 tsp biryani masala",
+          "A few saffron strands soaked in milk",
+          "Ghee for cooking",
+          "Fresh mint and coriander leaves for garnish"
+        ],
+        "instructions": [
+          "Marinate chicken with yogurt, ginger-garlic paste, red chili powder, and biryani masala.",
+          "In a separate pot, cook the rice until it's partially done.",
+          "In a large pan, heat ghee, add sliced onions, and cook until caramelized.",
+          "Layer the marinated chicken, rice, saffron milk, and chopped tomatoes in a pot.",
+          "Cook on low heat until the chicken is tender and the rice is fully cooked.",
+          "Garnish with fresh mint and coriander leaves before serving."
+        ]
+      },
+      {
+        "name": "Masala Dosa",
+        "imageUrl":"https://www.indianhealthyrecipes.com/wp-content/uploads/2021/06/masala-dosa-recipe.jpg",
+        "duration": "1 hour",
+        "ingredients": [
+          "2 cups dosa rice",
+          "1/2 cup urad dal (black gram)",
+          "1/2 tsp fenugreek seeds",
+          "Salt to taste",
+          "Potato masala (for filling)",
+          "Oil for cooking"
+        ],
+        "instructions": [
+          "Soak dosa rice, urad dal, and fenugreek seeds in water for 6 hours.",
+          "Grind the soaked mixture into a smooth batter and ferment for 8 hours.",
+          "Heat a griddle, pour a ladleful of batter, and spread it into a thin dosa.",
+          "Add potato masala filling, fold the dosa, and cook until crispy.",
+          "Serve hot with coconut chutney and sambar."
+        ]
+      },
+      {
+        "name": "Chana Masala",
+        "duration": "45 minutes",
+        "imageUrl":"https://www.cookwithmanali.com/wp-content/uploads/2023/04/Punjabi-Chole-Masala-500x375.jpg",
+        "ingredients": [
+          "2 cups cooked chickpeas",
+          "2 onions, finely chopped",
+          "2 tomatoes, chopped",
+          "2 tsp ginger-garlic paste",
+          "1 tsp cumin seeds",
+          "1 tsp coriander powder",
+          "1 tsp turmeric powder",
+          "1 tsp garam masala",
+          "1/2 tsp red chili powder",
+          "Salt to taste",
+          "Fresh cilantro leaves for garnish",
+          "Cooking oil"
+        ],
+        "instructions": [
+          "Heat oil in a pan, add cumin seeds, and let them splutter.",
+          "Add chopped onions and sauté until they turn translucent.",
+          "Add ginger-garlic paste and cook until the raw smell disappears.",
+          "Add chopped tomatoes and cook until they turn soft.",
+          "Stir in coriander powder, turmeric, garam masala, red chili powder, and salt.",
+          "Add cooked chickpeas and simmer until the curry thickens.",
+          "Garnish with fresh cilantro leaves and serve with rice or naan."
+        ]
+      },
+      {
+        "name": "Aloo Paratha",
+        "duration": "30 minutes",
+        "imageUrl":"https://www.vegrecipesofindia.com/wp-content/uploads/2009/08/aloo-paratha-recipe-2.jpg",
+        "ingredients": [
+          "2 cups whole wheat flour",
+          "4 medium-sized potatoes, boiled and mashed",
+          "1 onion, finely chopped",
+          "2 green chilies, finely chopped",
+          "1 tsp cumin seeds",
+          "1/2 tsp turmeric powder",
+          "1/2 tsp garam masala",
+          "Salt to taste",
+          "Ghee for cooking"
+        ],
+        "instructions": [
+          "Mix whole wheat flour, water, and a pinch of salt to make the dough for parathas.",
+          "In a separate bowl, combine mashed potatoes, chopped onions, green chilies, cumin seeds, turmeric, garam masala, and salt.",
+          "Divide the dough into small portions and roll each portion into a small circle.",
+          "Place a spoonful of potato mixture in the center, fold the dough, and roll it into a paratha.",
+          "Cook on a griddle with ghee until both sides are golden brown.",
+          "Serve hot with yogurt or pickles."
+        ]
+      }
+    ]
+  }
+  

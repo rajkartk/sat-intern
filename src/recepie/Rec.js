@@ -5,11 +5,13 @@ import { useRoute } from '@react-navigation/native';
 const RecepieScreen = () => {
   const route = useRoute(); // Get the route object
 
+  const jsonData = require('./recepie.json');
+
+
+
   // Access the data from route.params
   const name = route.params.name;
-  const recepie = route.params.recepie;
   const imageUrl = route.params.imageUrl;
-
   return (
     <View style={{flex:1}} >
     <View style={stlyes.container} >
@@ -21,9 +23,10 @@ const RecepieScreen = () => {
         <Text style={stlyes.dishName} >{name}</Text>
       </View>  
 
-      <View>
-        <Text>{recepie}</Text>
+      <View style={stlyes.recipeText} >
+       <Text style={{color:'black'}} >hello</Text>
       </View>
+
     </View>
     </View>
   );
@@ -42,7 +45,8 @@ const stlyes = StyleSheet.create({
         alignItems:'center',
         elevation:10,
         shadowColor:'orange',
-        shadowRadius:2
+        shadowRadius:2,
+        flex:3
     },
     imageContainer:{
         width:250,
@@ -52,20 +56,29 @@ const stlyes = StyleSheet.create({
         borderWidth:3,
     },
     aboutDish:{
-        padding:5,
-        margin:10,
+        padding:10,
+        margin:8,
         justifyContent:'center',
         alignItems:'center',
-        backgroundColor:'#000',
+        backgroundColor:'#e3e8e5',
         borderRadius:10,
-        elevation:10
+        elevation:10,
+        flex:1
     },
     dishName:{
-        fontSize:50,
+        fontSize:30,
         fontWeight:'bold',
         color:'#c28910'
     },
     recepieDish:{
         color:'black'
+    },
+    recipeText:{
+      margin:10,
+      backgroundColor:'#e8e1cf',
+      padding:10,
+      flex:3,
+      borderRadius:10,
+      elevation:20,
     }
 })

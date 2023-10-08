@@ -33,10 +33,12 @@ export default function Page1() {
             <Image source={Filter} style={{width:25, height:25}} />
           </TouchableOpacity> 
         </View>
+        <View style={{margin:10}} ></View>
       
       </View>
 
-      <View style={styles.continental}>
+
+        <View style={styles.continental}>
         <Text
           style={{fontSize: 20, margin: 5, color: 'black', fontWeight: 'bold'}}>
           Popular Dish
