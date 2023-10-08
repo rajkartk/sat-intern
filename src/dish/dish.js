@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { View, Text, FlatList, Image, StyleSheet, TouchableOpacity } from 'react-native';
-import AddButton from '../Button/AddButton';
 import { useNavigation } from '@react-navigation/native';
 import * as Rimage from '../Image/index'
 

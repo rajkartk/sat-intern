@@ -1,14 +1,25 @@
-import React, { useEffect, useState } from 'react';
-import { View, Text, FlatList, Image } from 'react-native';
+import React from 'react';
+import { View, Text, FlatList, Image,TouchableOpacity } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 
 const PopularDish = () => {
-  const recepirData = require('../src/recepie/recepie')
+  const navigation = useNavigation();
 
+  
+  const recepirData = require('../src/recepie/recepie')
+  const handleClick = (item) =>{
+    navigation.navigate('Recepie',{
+      name:item.name,
+      imageUrl : item.imageUrl,
+      recepie : recepirData.recipe
+    })
+    
+  }
   const renderItem = ({ item }) => (
-    <View style={{paddingHorizontal:10, justifyContent:'center', alignItems:'center'}} >
+    <TouchableOpacity onPress={()=>handleClick(item)} style={{paddingHorizontal:10, justifyContent:'center', alignItems:'center'}} >
       <Image source={{ uri: item.imageUrl }} style={{ width: 80, height: 80, borderRadius:50, borderColor:'orange', borderWidth:2 }} />
       <Text style={{color:'black'}}>{item.name}</Text>
-    </View>
+    </TouchableOpacity>
   );
 
   if (recepirData.length === 0) {
@@ -20,7 +31,7 @@ const PopularDish = () => {
   }
 
   return (
-    <View>
+    <View  >
       <FlatList
         horizontal={true}
         data={recepirData}
