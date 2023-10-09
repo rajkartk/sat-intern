@@ -7,17 +7,9 @@ const PopularDish = () => {
 
   
   const recepirData = require('../src/recepie/recepie')
-  const handleClick = (item) =>{
-    navigation.navigate('Recepie',{
-      name:item.name,
-      imageUrl : item.imageUrl,
-      recepie : recepirData.recipe,
-      id:item.id
-    })
-    
-  }
+  
   const renderItem = ({ item }) => (
-    <TouchableOpacity onPress={()=>handleClick(item)} style={{paddingHorizontal:10, justifyContent:'center', alignItems:'center'}} >
+    <TouchableOpacity onPress={()=>navigation.navigate('Recepie',{item:item})} style={{paddingHorizontal:10, justifyContent:'center', alignItems:'center'}} >
       <Image source={{ uri: item.imageUrl }} style={{ width: 80, height: 80, borderRadius:50, borderColor:'orange', borderWidth:2 }} />
       <Text style={{color:'black'}}>{item.name}</Text>
       {/* <View>{item.recipe}</View> */}
@@ -33,7 +25,7 @@ const PopularDish = () => {
   }
 
   return (
-    <View  >
+    <View>
       <FlatList
         horizontal={true}
         data={recepirData}

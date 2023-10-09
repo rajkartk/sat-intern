@@ -2,7 +2,6 @@ import React from 'react'
 import { NavigationContainer } from '@react-navigation/native'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import Page1 from './src/page1';
-import Page2 from './src/page2';
 import ViewList from './src/ViewList';
 import Rec from './src/recepie/Rec';
 const Stack = createNativeStackNavigator();

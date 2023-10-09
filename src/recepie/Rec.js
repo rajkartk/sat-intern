@@ -1,30 +1,22 @@
 import React from 'react';
 import { View, Text, Image, StyleSheet } from 'react-native';
-import { useRoute } from '@react-navigation/native';
 
-const RecepieScreen = () => {
-  const route = useRoute(); // Get the route object
+const RecepieScreen = ({route}) => {
+  const {item} = route.params;
 
-  const jsonData = require('./recepie.json');
-
-
-
-  // Access the data from route.params
-  const name = route.params.name;
-  const imageUrl = route.params.imageUrl;
   return (
     <View style={{flex:1}} >
     <View style={stlyes.container} >
 
        <View style={stlyes.imageStyles} >
-            <Image source={{ uri: imageUrl }} style={stlyes.imageContainer} />
+            <Image source={{ uri: item.imageUrl }} style={stlyes.imageContainer} />
         </View> 
       <View style={stlyes.aboutDish} >
-        <Text style={stlyes.dishName} >{name}</Text>
+        <Text style={stlyes.dishName} >{item.name}</Text>
       </View>  
 
       <View style={stlyes.recipeText} >
-       <Text style={{color:'black'}} >hello</Text>
+       <Text style={stlyes.recipeFont} >{item.recipe}</Text>
       </View>
 
     </View>
@@ -80,5 +72,9 @@ const stlyes = StyleSheet.create({
       flex:3,
       borderRadius:10,
       elevation:20,
+    },
+    recipeFont:{
+      fontSize:20,
+      color:'black'
     }
 })

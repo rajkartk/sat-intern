@@ -1,12 +1,6 @@
 
   [
       {
-        "id":"1",
-        "name": "Paneer Tikka",
-        "recipe": "Paneer tikka is a popular Indian appetizer made from marinated paneer cubes grilled to perfection.",
-        "imageUrl": "https://www.cookwithkushi.com/wp-content/uploads/2023/02/tandoori_paneer_tikka_restaurant_style.jpg"
-      },
-      {
         "id":"2",
         "name": "Vegetable Biryani",
         "recipe": "Vegetable biryani is a fragrant and flavorful rice dish made with mixed vegetables and aromatic spices.",
